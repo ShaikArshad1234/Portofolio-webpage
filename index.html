@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section with Skills -->
+    <header>
+        <h1>Shaik Arshad</h1>
+        <p>I'm a passionate web developer who loves creating amazing projects!</p>
+        <h3>Top Skills:</h3>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+        </ul>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <!-- Projects will be fetched dynamically using the GitHub API -->
+        <div id="project-list">
+            <!-- Placeholder projects that will be replaced with fetched data -->
+            <div class="project" data-title="Project 1">
+                <h3>Project 1</h3>
+                <p>A short description of project 1.</p>
+            </div>
+            <div class="project" data-title="Project 2">
+                <h3>Project 2</h3>
+                <p>A short description of project 2.</p>
+            </div>
+            <div class="project" data-title="Project 3">
+                <h3>Project 3</h3>
+                <p>A short description of project 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Modal for project details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
